@@ -30,7 +30,7 @@ document.getElementById("app").innerHTML = `
 
 <tr>
   <td>Meal 5</td>
-  <td>6,99 €</td>
+  <td>6,88 €</td>
 </tr>
 
   </table>
