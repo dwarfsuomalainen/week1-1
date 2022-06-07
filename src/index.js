@@ -20,17 +20,24 @@ let button = document.createElement("button");
 button.id = "add-comment";
 button.innerHTML = "add your comment";
 document.body.appendChild(button);
-let text = document.getElementById("textarea");
+
 button.addEventListener("click", addComment);
 function addComment() {
   const li = document.createElement("li");
+  const textNode = document.createTextNode(text.value);
+  li.appendChild(textNode);
   list1.appendChild(li);
+  console.log(text.value);
   //list1.innerHTML = .innerHTML;
 }
-
+let text = document.createElement("textarea");
+text.setAttribute("id", "textarea");
+document.body.appendChild(text);
+//
+console.log(text.value);
 //.appendChild (textField);
 
 function postToList() {
   let list = document.getElementById("list");
-  list.innerHTML = b;
+  list.innerHTML = 0;
 }
