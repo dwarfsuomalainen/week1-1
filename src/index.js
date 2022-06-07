@@ -39,8 +39,11 @@ function clearlist() {
   //console.log(ul);
   //for (let i = 0; i < lenght; i++) {}
   //ul.parentNode.removeChild(ul);
-
-  confirm("NO PLEASE I HAVE A FAMILY!!! NOOOO!!!!");
-  console.log(list1);
-  list1.innerHTML = "";
+  let textC = "NO PLEASE I HAVE A FAMILY!!! NOOOO!!!!";
+  if (confirm(textC) === true) {
+    console.log(list1);
+    list1.innerHTML = "";
+  } else {
+    console.log(list1);
+  }
 }
