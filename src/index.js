@@ -2,24 +2,17 @@ import "./styles.css";
 
 document.getElementById("app").innerHTML = `
 `;
-//let a = document.getElementById("textarea");
-//console.log(a);
-//let b = a.innerText;
 
-//let button = document.getElementById("button");
-//console.log(button);
-//button.addEventListener("click", postToList);
 let list1 = document.createElement("ul");
 list1.id = "list";
 document.body.appendChild(list1);
-//let inputField = document.createElement("input");
-//inputField.id = "textarea";
-//inputField.placeholder = "enter comment here";
-//document.body.appendChild(inputField);
+
 let button = document.createElement("button");
 button.id = "add-comment";
 button.innerHTML = "add your comment";
 document.body.appendChild(button);
+document.body.appendChild(document.createElement("br"));
+document.body.appendChild(document.createElement("br"));
 
 button.addEventListener("click", addComment);
 function addComment() {
@@ -28,16 +21,26 @@ function addComment() {
   li.appendChild(textNode);
   list1.appendChild(li);
   console.log(text.value);
-  //list1.innerHTML = .innerHTML;
 }
 let text = document.createElement("textarea");
 text.setAttribute("id", "textarea");
 document.body.appendChild(text);
-//
+document.body.appendChild(document.createElement("br"));
 console.log(text.value);
-//.appendChild (textField);
+document.body.appendChild(document.createElement("br"));
+let delButton = document.createElement("button");
+delButton.setAttribute("id", "remove-comments");
+delButton.innerHTML = "Delete all the comments";
+document.body.appendChild(delButton);
+delButton.addEventListener("click", clearlist);
+function clearlist() {
+  //let ul = document.querySelectorAll("li");
+  //let lenght = ul.children.lenght;
+  //console.log(ul);
+  //for (let i = 0; i < lenght; i++) {}
+  //ul.parentNode.removeChild(ul);
 
-function postToList() {
-  let list = document.getElementById("list");
-  list.innerHTML = 0;
+  confirm("NO PLEASE I HAVE A FAMILY!!! NOOOO!!!!");
+  console.log(list1);
+  list1.innerHTML = "";
 }
